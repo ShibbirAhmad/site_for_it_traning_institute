@@ -16,6 +16,10 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	vertical-align: baseline;
 	background: transparent;
 }
+
+.warning{font-size:18px;color:red;font-style:italic;font-family: 'Times New Roman';}
+.success{font-size:18px;color:green;font-style:italic;font-family: 'Times New Roman';}
+
 body {
 	background: #DCDDDF;
 	color: #000;

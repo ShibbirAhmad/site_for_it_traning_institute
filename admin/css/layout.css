@@ -2,7 +2,8 @@
 -----------------------------------------------
 Grey Box Method - Layout CSS
 ----------------------------------------------- */
-
+.warning{font-size:18px;color:red;font-style:italic;font-family: 'Times New Roman';}
+.success{font-size:18px;color:green;font-style:italic;font-family: 'Times New Roman';}
 body {
   background: #fff none repeat scroll 0 0;
   color: #444;

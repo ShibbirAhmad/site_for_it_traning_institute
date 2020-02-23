@@ -4,7 +4,7 @@
             <ul class="section menu">
                <li><a class="menuitem">Site Option</a>
                     <ul class="submenu">
-                        <li><a href="titleslogan.php">Title & Slogan</a></li>
+                        <li><a href="titleslogan.php">Title & Description</a></li>
                         <li><a href="social.php">Social Media</a></li>
                         <li><a href="copyright.php">Copyright</a></li>
                         
@@ -13,28 +13,57 @@
 				
                  <li><a class="menuitem">Update Pages</a>
                     <ul class="submenu">
-                        <li><a>About Us</a></li>
-                        <li><a>Contact Us</a></li>
+                        <li><a>About Me</a></li>
+                        <li><a>Contact Me</a></li>
                     </ul>
                 </li>
-				<li><a class="menuitem">Slider Option</a>
+                 
+                <li><a class="menuitem">Web Builder Team</a>
                     <ul class="submenu">
-                        <li><a href="addslider.php">Add Slider</a> </li>
-                        <li><a href="sliderlist.php">Slider List</a> </li>
+                        <li><a href="addDeveloper.php" >Add Developer</a></li>
+                        <li><a href="developerList.php" >Developer List</a></li>
                     </ul>
-                </li>
-                <li><a class="menuitem">Category Option</a>
+                </li>   
+
+                <li><a class="menuitem">project Slider</a>
                     <ul class="submenu">
-                        <li><a href="addcat.php">Add Category</a> </li>
-                        <li><a href="catlist.php">Category List</a> </li>
+                        <li><a href="addSlider.php" >Add Slider</a></li>
+                        <li><a href="sliderList.php" >Slider List</a></li>
                     </ul>
                 </li>
-                <li><a class="menuitem">Product Option</a>
+
+                <li><a class="menuitem">project Category</a>
                     <ul class="submenu">
-                        <li><a href="addproduct.php">Add Product</a> </li>
-                        <li><a href="productlist.php">Product List</a> </li>
+                        <li><a href="addCategory.php">Add Project Category</a> </li>
+                        <li><a href="categoryList.php"> Project Category List</a> </li>
                     </ul>
                 </li>
+                <li><a class="menuitem">Post Category</a>
+                    <ul class="submenu">
+                        <li><a href="addPostCategory.php">Add Post Category</a> </li>
+                        <li><a href="postCategoryList.php"> Post Category List</a> </li>
+                    </ul>
+                </li>
+                <li><a class="menuitem">Project Option</a>
+                    <ul class="submenu">
+                        <li><a href="addProject.php">Add Project</a> </li>
+                        <li><a href="ProjectList.php">Project List</a> </li>
+                    </ul>
+                </li>
+
+                <li><a class="menuitem">Post Option</a>
+                    <ul class="submenu">
+                        <li><a href="addPost.php">Add Post</a> </li>
+                        <li><a href="postList.php">Post List</a> </li>
+                    </ul>
+                </li>
+
+                <li><a class="menuitem">Contact Option</a>
+                    <ul class="submenu">
+                        <li><a href="updateContact.php">update Contact</a> </li>
+                    </ul>
+                </li>
+
             </ul>
         </div>
     </div>

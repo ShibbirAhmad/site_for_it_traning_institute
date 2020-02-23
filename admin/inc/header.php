@@ -1,3 +1,23 @@
+<?php 
+
+include "./lib/config.php";
+include "./lib/Database.php"; 
+include "./lib/Session.php";
+
+
+Session::checkSession();
+
+spl_autoload_register(function($class){
+
+         include_once "./classes/".$class.".php";
+});
+
+          $db            = new Database();
+          $helper        = new Helper();
+          $admin         = new Admin ();
+        
+
+?>
 <?php
   header("Cache-Control: no-cache, must-revalidate");
   header("Pragma: no-cache"); 
@@ -44,19 +64,32 @@
                     <img src="img/livelogo.png" alt="Logo" />
 				</div>
 				<div class="floatleft middle">
-					<h1>Training with live project</h1>
-					<p>www.trainingwithliveproject.com</p>
+					<h1>Stay with shibbir-it</h1>
+					<p>www.shibbirit.com</p>
 				</div>
                 <div class="floatright">
                     <div class="floatleft">
                         <img src="img/img-profile.jpg" alt="Profile Pic" /></div>
                     <div class="floatleft marginleft10">
                         <ul class="inline-ul floatleft">
-                            <li>Hello Admin</li>
-                            <li><a href="#">Logout</a></li>
+                        
+                        <?php 
+                        
+                        if (isset($_GET['logout'])) {
+                              
+                            Session::destroy();
+
+                        }
+                        
+                                      
+                        ?>
+
+                            <li>Hello <?php echo Session::get('adminName'); ?></li>
+                            <li><a href="?logout">Logout</a></li>
                         </ul>
                     </div>
                 </div>
+
                 <div class="clear">
                 </div>
             </div>
@@ -65,11 +98,15 @@
         </div>
         <div class="grid_12">
             <ul class="nav main">
-                <li class="ic-dashboard"><a href="index.php"><span>Dashboard</span></a> </li>
-                <li class="ic-form-style"><a href=""><span>User Profile</span></a></li>
-				<li class="ic-typography"><a href="changepassword.php"><span>Change Password</span></a></li>
+                <li class="ic-dashboard"><a href="dashboard.php"><span>Dashboard</span></a> </li>
+                <li class="ic-form-style"><a href="AdminProfile.php"><span>Admin Profile</span></a></li>
+                <li class="ic-typography"><a href="CreateAdmin.php"><span>Create Admin</span></a></li>
+				<li class="ic-typography"><a href="Changepassword.php"><span>Change Password</span></a></li>
+           
 				<li class="ic-grid-tables"><a href="inbox.php"><span>Inbox</span></a></li>
-                <li class="ic-charts"><a href=""><span>Visit Website</span></a></li>
+               
+                <li class="ic-grid-tables"><a href="subscriberList.php"><span>subscribers</span></a></li>
+                <li class="ic-charts"><a href="?"><span>Visit Website</span></a></li>
             </ul>
         </div>
         <div class="clear">
